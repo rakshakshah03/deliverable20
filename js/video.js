@@ -5,6 +5,9 @@ window.addEventListener("load", function() {
 	video = document.querySelector("#player1");
 	video.autoplay = false;
 	video.loop = false;
+	var vid = document.createElement('script');
+	vid.src = 'js/video.js';
+	document.head.appendChild(vid);
 
 });
 
