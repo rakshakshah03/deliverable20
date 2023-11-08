@@ -36,13 +36,13 @@ document.querySelector("#faster").addEventListener("click",function(){
 
 //stops working
 document.querySelector("#skip").addEventListener("click",function(){
-	if (video.currentTime() <= video.duration ){
-		video.currentTime(video.currentTime() + 10);
+	let j = video.currentTime;
+	let k = video.currentTime + 10;
+	if (k >= video.duration ){
+		k = 0;
 	}
-	else{
-		video.currentTime(0);
-	}
-	console.log("Current Location: " + video.currentTime())
+	video.currentTime = k;
+	console.log("Current Location: " + k);
 });
 
 document.querySelector("#mute").addEventListener("click",function(){
