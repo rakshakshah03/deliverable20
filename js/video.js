@@ -1,7 +1,7 @@
 var video = document.querySelector("video");
 
 window.addEventListener("load", function() {
-	console.log("Good job opening the window")
+	console.log("Good job opening the window");
 	video.autoplay = false;
 	video.loop = false;
 });
@@ -47,7 +47,7 @@ document.querySelector("#skip").addEventListener("click",function(){
 
 document.querySelector("#mute").addEventListener("click",function(){
 	if(video.muted == true){
-		video.muted = false
+		video.muted = false;
 		document.querySelector("#mute").innerHTML = "Mute";
 	}
 	else{
@@ -60,7 +60,7 @@ document.querySelector("#mute").addEventListener("click",function(){
 
 
 document.querySelector("#slider").addEventListener("input", function() {
-	video.volume = this.value/100
+	video.volume = this.value/100;
 	document.querySelector("#volume").textContent = this.value + "%";
 });
 
